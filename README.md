@@ -27,6 +27,9 @@
 
 ### 2024.10.1
 使用自拟的中文语料在经典 RNN 循环神经网络下训练语句扩写模型，并使用 SwanLab 管理训练参数。训练过程如下：
+
 ![SwanLab-Chart-RNN](RNN/SwanLab-Chart-RNN.png)
+
 生成能力测试：
+
 ![generate_test](RNN/generate_test.png)
