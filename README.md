@@ -70,6 +70,7 @@ python train.py --epoch 12 --lr 0.01 --bs 64
 #### 注册wandb/Swanlab账号并学习线上管理项目
 
 [wandb document](https://docs.wandb.ai/guides)
+
 [Swanlab](https://swanlab.cn)
 
 #### 学习wandb/Swanlab实现超参数搜索
