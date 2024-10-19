@@ -42,7 +42,7 @@ Git是项目协作的必备技能，之后会使用Git来提交作业
 
 ### T1-2 理论基础与代码实践
 
-![image1](./image1.webp)
+![image1](./figures/image1.webp)
 
 [飞浆PaddlePaddle-源于产业实践的开源深度学习平台](https://www.paddlepaddle.org.cn/tutorials/projectdetail/3713999)
 
