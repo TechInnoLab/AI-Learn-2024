@@ -14,11 +14,12 @@
 
 [Python飞浆](https://aistudio.baidu.com/course/introduce/1224?directly=1&shared=1)
 
-备注：只学习课节1~4，**掌握python语法基础，常见工具，linux基础，ipynb用法，Git基础**
+**linux基础，ipynb用法，Git基础**
 
 #### 关于Git基础
 Git是项目协作的必备技能，之后会使用Git来提交作业
 [Git廖雪峰教程](https://liaoxuefeng.com/books/git/introduction/index.html)
+本内容的基本操作在我的分支的learngit文件夹中练习
 
 #### 关于linux基础补充说明
 
