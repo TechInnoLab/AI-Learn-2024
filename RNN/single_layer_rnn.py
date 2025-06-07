@@ -204,7 +204,7 @@ class RNNModelScratch:
 
 
 # 文本生成函数，给定前缀生成后续字符
-def predict_ch8(prefix, num_preds, net, vocab, device):
+def model_predict(prefix, num_preds, net, vocab, device):
     state = net.begin_state(batch_size=1, device=device)
     outputs = [vocab[prefix[0]]]  # 以第一个字符为起点
 
@@ -275,7 +275,7 @@ def train_model(net, train_iter, vocab, lr, num_epochs, device, use_random_iter=
     else:
         def updater(batch_size): return sgd(net.params, lr, batch_size)
 
-    def predict(prefix): return predict_ch8(prefix, 50, net, vocab, device)
+    def predict(prefix): return model_predict(prefix, 50, net, vocab, device)
     for epoch in range(num_epochs):
         ppl, speed = train_epoch(
             net, train_iter, loss, updater, device, use_random_iter)
@@ -309,7 +309,7 @@ def model_run(train=True):
     else:
         net = torch.load("rnn_model.pth")  # 加载已训练模型
         prefix = input("请输入：")  # 输入前缀
-        result = predict_ch8(prefix, 50, net, vocab, try_gpu())
+        result = model_predict(prefix, 50, net, vocab, try_gpu())
         print(result)
 
 
